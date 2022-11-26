@@ -1,0 +1,139 @@
+@import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@500&display=swap');
+
+html {
+  overflow: hidden;
+}
+
+#file-explorer {
+  background-color: #000000;
+  width: 240px;
+  flex: 240px 0 0;
+}
+
+#file-explorer li {
+  background-color: transparent;
+}
+
+#file-explorer li:hover {
+  cursor: pointer;
+}
+
+#file-explorer li:hover .la-times {
+  display: inline;
+}
+
+#file-explorer li.active {
+  background-color: rgb(0, 0, 0);
+  color: #76cbc4;
+  border: 0;
+}
+
+.la-times {
+  display: none;
+  margin-top: 3px;
+}
+
+.la-file-medical,
+.la-file-upload {
+  font-size: 24px;
+}
+
+.la-file-medical:hover,
+.la-file-upload:hover {
+  cursor: pointer;
+}
+
+/*  */
+
+input {
+  font-size: 13px !important;
+  padding-left: 4px !important;
+  color: #fff !important;
+}
+
+input:active,
+input:focus {
+  box-shadow: none !important;
+  outline: none;
+}
+
+/*  */
+#editor {
+  /* width: 100%; */
+  width: calc(100vw - 240px);
+  height: calc(100vh - 56px - 20px);  
+}
+
+.CodeMirror.cm-s-material-darker {
+  height: 100%;
+}
+
+.CodeMirror.cm-s-dracula {
+  height: 100%;
+}
+
+.CodeMirror.cm-s-material-palenight {
+  height: 100%;
+}
+
+.CodeMirror.cm-s-material-ocean {
+  height: 100%;
+}
+
+.CodeMirror * {
+  font-family: "JetBrains Mono", monospace;
+  font-size: 13px;
+}
+
+/*  */
+.nav {
+  background-color: #21252b;
+  width: 2048px;
+}
+.nav-link {
+  font-size: 13px;
+  color: #e3e3e3 !important;
+  background-color: #21252b;
+  border-right: 1px solid #000;
+}
+
+.nav-link.active {
+  font-size: 13px;
+  color: #fff !important;
+  background-color: #212121;
+  border-right: 1px solid #000;
+  border-bottom: 2px solid #76cbc4;
+}
+
+.form-check-input {
+  margin-top: 5px;
+}
+
+.nav {
+  min-height: 35px;
+}
+
+
+
+input[type="file"] {
+  position: absolute;
+  z-index: 1;
+  opacity: 0;
+  margin-left: 80px;
+  width: 24px;
+}
+
+input[type="file"]:hover {
+  cursor: pointer;
+}
+
+.filename {
+  max-width: 170px;
+  width: 170px;
+  display: inline-block;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+
